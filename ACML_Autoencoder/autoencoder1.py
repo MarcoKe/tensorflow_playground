@@ -1,5 +1,12 @@
+# autoencoder that receives a one-hot string of length 8
+# e.g. [0, 0, 0, 1, 0, 0, 0, 0] with the goal to reproduce
+# that same string as output 
+
 import tensorflow as tf
 import numpy as np
+
+# parameters
+num_epochs = 50000
 
 # network parameters
 input_nodes = 8
@@ -37,7 +44,7 @@ with tf.Session() as sess:
 
     input_data = np.identity(8)
 
-    for epoch in range(1, 50000):
+    for epoch in range(1, num_epochs):
         sess.run(train_op, feed_dict={data: input_data})
 
         loss, acc = sess.run([loss_op, accuracy], feed_dict={data: input_data})

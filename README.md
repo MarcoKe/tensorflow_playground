@@ -9,7 +9,7 @@
 - run `pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py3-none-any.whl`
 
 - test the environment by entering the python interactive shell and executing: 
-```
+```python
 	import tensorflow as tf
 	hello = tf.constant('Hello, TensorFlow!')
 	sess = tf.Session()

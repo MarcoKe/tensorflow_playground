@@ -13,6 +13,7 @@ Setting up the environment:
 	import tensorflow as tf
 	hello = tf.constant('Hello, TensorFlow!')
 	sess = tf.Session()
-	print(sess.run(hello))```
+	print(sess.run(hello))
+```
   
  

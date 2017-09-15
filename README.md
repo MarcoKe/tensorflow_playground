@@ -1,7 +1,7 @@
 # tensorflow_playground
 
-Setting up the environment: 
-==============================
+## Setting up the environment: 
+
 
 - clone the project and change into the project directory 
 - run `conda env create` 

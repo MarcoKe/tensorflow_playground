@@ -1,7 +1,7 @@
 # tensorflow_playground
 
 ## Setting up the environment (Mac): 
-
+- *(this is my preferred way of doing it, for alternatives look [here](https://www.tensorflow.org/install/)).*
 
 - clone the project and change into the project directory 
 - run `conda env create` 

@@ -15,5 +15,5 @@
 	sess = tf.Session()
 	print(sess.run(hello))
 ```
-- might get some warnings in the form “The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.”, the installation will work properly, but speedups could be achieved by compiling tensorflow from source)
+- might get some warnings in the form “The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.”, the installation will work properly, but speedups could be achieved by compiling tensorflow from source
  

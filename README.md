@@ -4,7 +4,7 @@
 - *(this is my preferred way of doing it, for alternatives look [here](https://www.tensorflow.org/install/)).*
 
 - clone the project and change into the project directory 
-- run `conda env create` 
+- run `conda env create` (in a terminal)
 - run `source activate tfenv` 
 - run `pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py3-none-any.whl`
 
@@ -20,9 +20,9 @@
 ## (Windows) 
 
 - clone the project and change into the project directory 
-- run `conda env create -f environment.yml`
+- run `conda env create -f environment.yml` (in the Anaconda prompt)
 - run `activate tfenv`
 - run `pip install --ignore-installed --upgrade tensorflow`
 
-- then proceed as above 
+- then proceed to test the environment as described above
  

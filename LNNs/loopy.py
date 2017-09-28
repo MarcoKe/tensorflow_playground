@@ -22,57 +22,72 @@ def model(X):
                             filters=16,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="first")
 
     conv2 = tf.layers.conv2d(inputs=conv1,
                             filters=8,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="second")
 
     conv3 = tf.layers.conv2d(inputs=conv2,
                             filters=1,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="third")
 
     # ===================================================
     conv4 = tf.layers.conv2d(inputs=input_layer+conv3,
                             filters=16,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="first",
+                            reuse=True)
 
     conv5 = tf.layers.conv2d(inputs=conv4,
                             filters=8,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="second",
+                            reuse=True)
 
     conv6 = tf.layers.conv2d(inputs=conv5,
                             filters=1,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="third",
+                            reuse=True)
 
     # ===================================================
     conv7 = tf.layers.conv2d(inputs=input_layer+conv6,
                             filters=16,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="first",
+                            reuse=True)
 
     conv8 = tf.layers.conv2d(inputs=conv7,
                             filters=8,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="second",
+                            reuse=True)
 
     conv9 = tf.layers.conv2d(inputs=conv8,
                             filters=1,
                             kernel_size=[3,3],
                             padding="same",
-                            activation=tf.nn.relu)
+                            activation=tf.nn.relu,
+                            name="third",
+                            reuse=True)
 
     # ================================================
     flattened = tf.contrib.layers.flatten(conv9)

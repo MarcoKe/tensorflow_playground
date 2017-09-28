@@ -36,7 +36,45 @@ def model(X):
                             padding="same",
                             activation=tf.nn.relu)
 
-    flattened = tf.contrib.layers.flatten(conv3)
+    # ===================================================
+    conv4 = tf.layers.conv2d(inputs=input_layer+conv3,
+                            filters=16,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    conv5 = tf.layers.conv2d(inputs=conv4,
+                            filters=8,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    conv6 = tf.layers.conv2d(inputs=conv5,
+                            filters=1,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    # ===================================================
+    conv7 = tf.layers.conv2d(inputs=input_layer+conv6,
+                            filters=16,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    conv8 = tf.layers.conv2d(inputs=conv7,
+                            filters=8,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    conv9 = tf.layers.conv2d(inputs=conv8,
+                            filters=1,
+                            kernel_size=[3,3],
+                            padding="same",
+                            activation=tf.nn.relu)
+
+    flattened = tf.contrib.layers.flatten(conv9)
     dense = tf.layers.dense(inputs=flattened,
                             units=10,
                             activation=tf.nn.relu)

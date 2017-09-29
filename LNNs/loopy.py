@@ -7,9 +7,9 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("../MNIST_data/", one_hot=True)
 
 # parameters
-num_epochs = 50000
+num_iterations = 50000
 batch_size = 128
-print_every = 100 # print loss every 100 epochs
+print_every = 100 # print loss every 100 iterations
 
 # variables
 x = tf.placeholder("float", [None, 28*28])
@@ -108,6 +108,8 @@ optimizer = tf.train.AdamOptimizer()
 train_op = optimizer.minimize(loss_op)
 
 # evaluate model
+correct_pred = tf.equal(tf.argmax(output, 1), tf.argmax(y_, 1))
+accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 # initialize variables
 init = tf.global_variables_initializer()
@@ -116,14 +118,14 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(init)
 
-    for epoch in range(1, num_epochs):
+    for iteration in range(1, num_iterations):
         batch_xs, batch_ys = mnist.train.next_batch(batch_size)
 
         writer = tf.summary.FileWriter('logs', sess.graph)
         # print(sess.run(output))
         sess.run(train_op, feed_dict={x: batch_xs, y_: batch_ys})
         writer.close()
-        if epoch % print_every == 0:
-            loss = sess.run(loss_op, feed_dict={x: batch_xs, y_: batch_ys})
+        if iteration % print_every == 0:
+           loss, acc = sess.run([loss_op, accuracy], feed_dict={x: batch_xs, y_: batch_ys})
 
-            print("Epoch:", epoch, "| loss:", loss)
+            print("iteration:", iteration, "| loss:", loss, "| accuracy:", acc)

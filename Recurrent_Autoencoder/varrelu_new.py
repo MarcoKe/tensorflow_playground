@@ -104,12 +104,13 @@ for step in range(1, num_steps):
 
     if step % print_every == 0:
         loss = sess.run(loss_op, feed_dict={x: batch_xs})
-        print("Step:", epoch, "| Minibatch loss:", loss)
+        print("Step:", step, "| Minibatch loss:", loss)
 
 # decoded images on test data:
-test_mnist = {x: mnist.test.images}
-decoded_images = decoded.eval(test_mnist)
-print("Loss on test set:", loss_op.eval(test_mnist))
+with sess.as_default():
+    test_mnist = {x: mnist.test.images}
+    decoded_images = decoded.eval(test_mnist)
+    print("Loss on test set:", loss_op.eval(test_mnist))
 
-save_path = saver.save(sess, save_path)
-print("Parameters saved as:" + save_path)
+    save_path = saver.save(sess, save_path)
+    print("Parameters saved as:" + save_path)

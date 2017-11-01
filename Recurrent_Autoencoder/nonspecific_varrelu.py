@@ -111,6 +111,27 @@ for step in range(1, num_steps):
             test_mnist = {x: mnist.test.images}
             print("Loss on test set:", loss_op.eval(test_mnist))
 
+
+    if step % 1000 == 0: 
+        plt.figure()
+        original_images = mnist.test.images
+
+        for i in range(num_reconstr_digits):
+            # original
+            ax = plt.subplot(2, num_reconstr_digits, i+1)
+            plt.imshow(original_images[i].reshape(28,28))
+            ax.get_xaxis().set_visible(False)
+            ax.get_yaxis().set_visible(False)
+
+            # reconstructed
+            ax = plt.subplot(2, num_reconstr_digits, i+1+num_reconstr_digits)
+            plt.imshow(decoded_images[i].reshape(28,28))
+            ax.get_xaxis().set_visible(False)
+            ax.get_yaxis().set_visible(False)
+
+        plt.savefig('mnist_simple_autoencoder.png')
+
+
 # decoded images on test data:
 with sess.as_default():
     test_mnist = {x: mnist.test.images}

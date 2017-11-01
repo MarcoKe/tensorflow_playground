@@ -101,8 +101,8 @@ for step in range(1, num_steps):
     batch_xs, batch_ys = mnist.train.next_batch(batch_size)
     #writer = tf.summary.FileWriter('logs', sess.graph)
     # sess.run(check_op, feed_dict={x: batch_xs})
-    #sess.run(train_op, feed_dict={x: batch_xs})
-    writer.close()
+    sess.run(train_op, feed_dict={x: batch_xs})
+    #writer.close()
 
     if step % print_every == 0:
         loss = sess.run(loss_op, feed_dict={x: batch_xs})
@@ -191,4 +191,4 @@ with sess.as_default():
         ax.get_xaxis().set_visible(False)
         ax.get_yaxis().set_visible(False)
 
-    plt.savefig('mnist_simple_autoencoder1stpass10000'.png')
+    plt.savefig('mnist_simple_autoencoder1stpass10000.png')

@@ -135,7 +135,7 @@ for step in range(1, num_steps):
 
             plt.savefig('mnist_simple_autoencoder' + str(step) + '.png')
 
-            decoded_images = decoder2.eval(test_mnist)
+            decoded_images2 = decoder2.eval(test_mnist)
 
             for i in range(num_reconstr_digits):
                 # original
@@ -146,11 +146,28 @@ for step in range(1, num_steps):
 
                 # reconstructed
                 ax = plt.subplot(2, num_reconstr_digits, i+1+num_reconstr_digits)
-                plt.imshow(decoded_images[i].reshape(28,28))
+                plt.imshow(decoded_images2[i].reshape(28,28))
                 ax.get_xaxis().set_visible(False)
                 ax.get_yaxis().set_visible(False)
 
             plt.savefig('mnist_simple_autoencoder1stpass' + str(step) + '.png')
+
+            for i in range(num_reconstr_digits):
+                # original
+                ax = plt.subplot(2, num_reconstr_digits, i+1)
+                plt.imshow(original_images[i].reshape(28,28))
+                ax.get_xaxis().set_visible(False)
+                ax.get_yaxis().set_visible(False)
+
+                # reconstructed
+                ax = plt.subplot(2, num_reconstr_digits, i+1+num_reconstr_digits)
+                difference = abs(decoded_images2[i]-decoded_images2[i])
+                plt.imshow(difference.reshape(28,28))
+                ax.get_xaxis().set_visible(False)
+                ax.get_yaxis().set_visible(False)
+
+            plt.savefig('mnist_simple_autoencoderdiff' + str(step) + '.png')
+
 
 
 

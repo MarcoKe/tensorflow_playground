@@ -1,0 +1,204 @@
+Extracting ../MNIST_data/train-images-idx3-ubyte.gz
+Extracting ../MNIST_data/train-labels-idx1-ubyte.gz
+Extracting ../MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting ../MNIST_data/t10k-labels-idx1-ubyte.gz
+Step: 100 | Minibatch loss: 0.251874
+Loss on test set: 0.252723
+Step: 200 | Minibatch loss: 0.240837
+Loss on test set: 0.250089
+Step: 300 | Minibatch loss: 0.245932
+Loss on test set: 0.249165
+Step: 400 | Minibatch loss: 0.25282
+Loss on test set: 0.24845
+Step: 500 | Minibatch loss: 0.245281
+Loss on test set: 0.245945
+Step: 600 | Minibatch loss: 0.24677
+Loss on test set: 0.24174
+Step: 700 | Minibatch loss: 0.239432
+Loss on test set: 0.238109
+Step: 800 | Minibatch loss: 0.223999
+Loss on test set: 0.233265
+Step: 900 | Minibatch loss: 0.216344
+Loss on test set: 0.219727
+Step: 1000 | Minibatch loss: 0.207803
+Loss on test set: 0.210537
+Step: 1100 | Minibatch loss: 0.176114
+Loss on test set: 0.184274
+Step: 1200 | Minibatch loss: 0.158746
+Loss on test set: 0.164882
+Step: 1300 | Minibatch loss: 0.154353
+Loss on test set: 0.149493
+Step: 1400 | Minibatch loss: 0.134782
+Loss on test set: 0.13764
+Step: 1500 | Minibatch loss: 0.130964
+Loss on test set: 0.12816
+Step: 1600 | Minibatch loss: 0.11301
+Loss on test set: 0.119378
+Step: 1700 | Minibatch loss: 0.115796
+Loss on test set: 0.113648
+Step: 1800 | Minibatch loss: 0.112811
+Loss on test set: 0.108484
+Step: 1900 | Minibatch loss: 0.105664
+Loss on test set: 0.104095
+Step: 2000 | Minibatch loss: 0.102193
+Loss on test set: 0.1013
+Step: 2100 | Minibatch loss: 0.0987664
+Loss on test set: 0.0983402
+Step: 2200 | Minibatch loss: 0.0945089
+Loss on test set: 0.0962965
+Step: 2300 | Minibatch loss: 0.0954803
+Loss on test set: 0.0945737
+Step: 2400 | Minibatch loss: 0.0914379
+Loss on test set: 0.093126
+Step: 2500 | Minibatch loss: 0.0945708
+Loss on test set: 0.0911146
+Step: 2600 | Minibatch loss: 0.0933913
+Loss on test set: 0.0895792
+Step: 2700 | Minibatch loss: 0.0845338
+Loss on test set: 0.0881801
+Step: 2800 | Minibatch loss: 0.0908313
+Loss on test set: 0.0875324
+Step: 2900 | Minibatch loss: 0.0846285
+Loss on test set: 0.0864467
+Step: 3000 | Minibatch loss: 0.0905035
+Loss on test set: 0.0853856
+Step: 3100 | Minibatch loss: 0.0871271
+Loss on test set: 0.0852058
+Step: 3200 | Minibatch loss: 0.08537
+Loss on test set: 0.0848322
+Step: 3300 | Minibatch loss: 0.0829075
+Loss on test set: 0.0836983
+Step: 3400 | Minibatch loss: 0.082832
+Loss on test set: 0.0830163
+Step: 3500 | Minibatch loss: 0.0811889
+Loss on test set: 0.0821502
+Step: 3600 | Minibatch loss: 0.0794447
+Loss on test set: 0.0819241
+Step: 3700 | Minibatch loss: 0.0842443
+Loss on test set: 0.0814915
+Step: 3800 | Minibatch loss: 0.0834194
+Loss on test set: 0.0811104
+Step: 3900 | Minibatch loss: 0.0797031
+Loss on test set: 0.0806911
+Step: 4000 | Minibatch loss: 0.0817787
+Loss on test set: 0.0804348
+Step: 4100 | Minibatch loss: 0.0774738
+Loss on test set: 0.0796719
+Step: 4200 | Minibatch loss: 0.0819227
+Loss on test set: 0.0794201
+Step: 4300 | Minibatch loss: 0.0772579
+Loss on test set: 0.0793073
+Step: 4400 | Minibatch loss: 0.077353
+Loss on test set: 0.0790636
+Step: 4500 | Minibatch loss: 0.0777336
+Loss on test set: 0.0787796
+Step: 4600 | Minibatch loss: 0.0776055
+Loss on test set: 0.0783996
+Step: 4700 | Minibatch loss: 0.0753146
+Loss on test set: 0.0780889
+Step: 4800 | Minibatch loss: 0.0768646
+Loss on test set: 0.0778544
+Step: 4900 | Minibatch loss: 0.0768344
+Loss on test set: 0.077699
+Step: 5000 | Minibatch loss: 0.0757164
+Loss on test set: 0.0776237
+Step: 5100 | Minibatch loss: 0.0760103
+Loss on test set: 0.0769884
+Step: 5200 | Minibatch loss: 0.0736392
+Loss on test set: 0.0770469
+Step: 5300 | Minibatch loss: 0.0774199
+Loss on test set: 0.0766189
+Step: 5400 | Minibatch loss: 0.0769555
+Loss on test set: 0.076574
+Step: 5500 | Minibatch loss: 0.078813
+Loss on test set: 0.0762803
+Step: 5600 | Minibatch loss: 0.0747246
+Loss on test set: 0.0758215
+Step: 5700 | Minibatch loss: 0.0740431
+Loss on test set: 0.0755773
+Step: 5800 | Minibatch loss: 0.072745
+Loss on test set: 0.0756636
+Step: 5900 | Minibatch loss: 0.0756
+Loss on test set: 0.0753681
+Step: 6000 | Minibatch loss: 0.0770882
+Loss on test set: 0.0753167
+Step: 6100 | Minibatch loss: 0.0749193
+Loss on test set: 0.0751346
+Step: 6200 | Minibatch loss: 0.0761354
+Loss on test set: 0.0747318
+Step: 6300 | Minibatch loss: 0.073984
+Loss on test set: 0.0747444
+Step: 6400 | Minibatch loss: 0.0753468
+Loss on test set: 0.0743566
+Step: 6500 | Minibatch loss: 0.0763461
+Loss on test set: 0.0742839
+Step: 6600 | Minibatch loss: 0.0735023
+Loss on test set: 0.074067
+Step: 6700 | Minibatch loss: 0.0705781
+Loss on test set: 0.0741089
+Step: 6800 | Minibatch loss: 0.07055
+Loss on test set: 0.0739689
+Step: 6900 | Minibatch loss: 0.0734911
+Loss on test set: 0.0738141
+Step: 7000 | Minibatch loss: 0.0717186
+Loss on test set: 0.0735897
+Step: 7100 | Minibatch loss: 0.0719499
+Loss on test set: 0.07328
+Step: 7200 | Minibatch loss: 0.0735586
+Loss on test set: 0.0734144
+Step: 7300 | Minibatch loss: 0.0713009
+Loss on test set: 0.0730678
+Step: 7400 | Minibatch loss: 0.0745334
+Loss on test set: 0.073123
+Step: 7500 | Minibatch loss: 0.0704068
+Loss on test set: 0.0728905
+Step: 7600 | Minibatch loss: 0.0738077
+Loss on test set: 0.072976
+Step: 7700 | Minibatch loss: 0.0697078
+Loss on test set: 0.0726272
+Step: 7800 | Minibatch loss: 0.0712372
+Loss on test set: 0.0726694
+Step: 7900 | Minibatch loss: 0.0695921
+Loss on test set: 0.0725928
+Step: 8000 | Minibatch loss: 0.073365
+Loss on test set: 0.0724473
+Step: 8100 | Minibatch loss: 0.0718909
+Loss on test set: 0.0722848
+Step: 8200 | Minibatch loss: 0.0727915
+Loss on test set: 0.0721066
+Step: 8300 | Minibatch loss: 0.071002
+Loss on test set: 0.0721289
+Step: 8400 | Minibatch loss: 0.0743401
+Loss on test set: 0.0721273
+Step: 8500 | Minibatch loss: 0.0697213
+Loss on test set: 0.0719957
+Step: 8600 | Minibatch loss: 0.071708
+Loss on test set: 0.0718531
+Step: 8700 | Minibatch loss: 0.0698023
+Loss on test set: 0.0718027
+Step: 8800 | Minibatch loss: 0.070728
+Loss on test set: 0.0715971
+Step: 8900 | Minibatch loss: 0.0715106
+Loss on test set: 0.0716722
+Step: 9000 | Minibatch loss: 0.0694606
+Loss on test set: 0.0715486
+Step: 9100 | Minibatch loss: 0.069066
+Loss on test set: 0.0715015
+Step: 9200 | Minibatch loss: 0.073269
+Loss on test set: 0.0713962
+Step: 9300 | Minibatch loss: 0.0678652
+Loss on test set: 0.071317
+Step: 9400 | Minibatch loss: 0.0735146
+Loss on test set: 0.0712458
+Step: 9500 | Minibatch loss: 0.0718593
+Loss on test set: 0.0710467
+Step: 9600 | Minibatch loss: 0.0697327
+Loss on test set: 0.071061
+Step: 9700 | Minibatch loss: 0.0706534
+Loss on test set: 0.0711066
+Step: 9800 | Minibatch loss: 0.0683734
+Loss on test set: 0.070802
+Step: 9900 | Minibatch loss: 0.0700859
+Loss on test set: 0.0706688
+Loss on test set: 0.0706446
+Parameters saved as:./nonspecific.ckp

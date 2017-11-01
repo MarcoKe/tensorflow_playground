@@ -58,9 +58,9 @@ with tf.name_scope('decoder2_t1') as scope:
 
 ##
 with tf.name_scope('encoder1_t2') as scope:
-    w5 = tf.Variable(tf.truncated_normal([decode1_nodes, encode1_nodes], stddev=0.0001), name="feedback-weights")
+    w5 = tf.Variable(tf.truncated_normal([decode1_nodes+output_nodes, encode1_nodes], stddev=0.0001), name="feedback-weights")
     encoder1_2 = tf.add(tf.matmul((x), w1, name="mul5"), b1)
-    fb = tf.matmul(decoder1, w5)
+    fb = tf.matmul(tf.concat([decoder1, decoder2], 1), w5)
     encoder1_2 = 1/(1-tf.minimum((2/3)/20 * fb, 2/3)) * tf.maximum(0.0, encoder1_2)
 
 
